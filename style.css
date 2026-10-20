@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #1A252c;
+    background-color: #F4F7F6;
+}
+
+
+/* 3. LAYOUT CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* 4.HEADER DAN NAVIGASI */
+header {
+    background-color: #008080;
+    color: white;
+    padding: 25px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0);
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+    margin-bottom: 15px;
+}
+
+nav {
+    margin-top: 10px;
+    font-size: 0.95;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 6px 14px;
+    margin: 0 2px;
+    border-radius: 4px;
+    transition: all  0.3s ease;
+}
+
+nav a:hover, nav a.active {
+    background-color: rgba(255, 255, 2555,0.25);
+    font-weight: bold;
+}
