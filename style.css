@@ -1,3 +1,19 @@
+/* 1. variable */
+:root{
+    --primary-color:#008080;
+    --primary-dark:#00515A;
+    --secondary-color:#1A252C;
+    --accent-color:#FF9800;
+    --bg-lihgt:#F4F7F6;
+    --white:#FFFFFF;
+    --text-muted: #666666;
+    --border-color: #E0E0E0;
+    --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.15);
+    --transition-fast: all 0.3s ease;
+}
+
+/* 2. CSS RESET */
 * {
     margin: 0;
     padding: 0;
@@ -7,10 +23,9 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #1A252c;
-    background-color: #F4F7F6;
+    color: var(--secondary-color);
+    background-color: var(var--bg-lihgt);
 }
-
 
 /* 3. LAYOUT CONTAINER */
 .container {
@@ -22,8 +37,8 @@ body {
 
 /* 4.HEADER DAN NAVIGASI */
 header {
-    background-color: #008080;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--white);
     padding: 25px 0;
     text-align: center;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
@@ -46,16 +61,90 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: var(--white);
     text-decoration: none;
     padding: 6px 14px;
     margin: 0 2px;
     border-radius: 4px;
-    transition: all  0.3s ease;
+    transition: var(--transition-fast);
 }
 
 nav a:hover, 
 nav a.active {
     background-color: rgba(255, 255, 2555, 0.25);
     font-weight: bold;
+}
+
+main {
+    padding: 40px 0;
+}
+
+.section{
+    margin-bottom: 50px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1.8;
+    color: var(--secondary-color);
+    margin-bottom: 5px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+}
+
+/* 6. CARD GRID */
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+/* 7. CARD COMPONENT */
+.card {
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: var(--shadow-soft);
+    overflow: hidden;
+    flex: 1 1 300px;
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    transition: var(--transition-fast);
+    border: 1px solid var(--border-color);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+}
+
+.card-img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 15px;
 }

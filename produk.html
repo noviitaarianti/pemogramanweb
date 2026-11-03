@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Katalog Produk & Portofolio - Poliban DigiCraft Studio</title>
+    <!-- 1. MENGHUBUNGKAN EXTERNAL CSS GLOBAL -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,70 +16,101 @@
             <h1>Poliban DigiCraft Studio</h1>
             <p>Solusi Transformasi Bisnis Digital Anda di Banjarmasin</p>
             <nav>
+                <a href="index.html">Beranda</a> |
                 <a href="biodata.html">Tentang Founder</a> |
                 <a href="produk.html" class="active">Katalog Jasa & Paket Harga</a> |
                 <a href="kontak.html">Kontak & Pemesanan</a>
             </nav>
         </div>
     </header>
-    <hr>
-    <section>
-        <h2>portofolio & Karya Unggulan Kami</h2>
-        <p>
-            <img src="profil/desain landing page.jpg" alt="Mockup Desain" width="450">
-            <br>
-            <em>Gambar 1: Desain Landing Page Responsif untuk UMKM lokal</em>
-        </p>
-    </section>
-    <hr>
-    <section>
-        <h2>Paket Layanan & Harga Jasa Kreatif</h2>
-        <p>Pilih paket layanan terbaik sesuai kebutuhan bisnis digital Anda:</p>
-
-        <table border="1" cellpadding="8" cellspacing="0">
-            <thead>
-                <tr bgcolor="#008080">
-                    <th colspan="4">
-                        <font color="white">DAFTAR HARGA JASA AGENSI DIGITAL</font>
-                    </th>
-                </tr>
-                <tr bgcolor="#F4F7F6">
-                    <th>Kategori Layanan</th>
-                    <th>Nama Paket</th>
-                    <th>Fasilitas Utama</th>
-                    <th>Estimasi Biaya</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td rowspan="2"><b>Desain & Web</b></td>
-                    <td>Landing Page Silver</td>
-                    <td>1 Halaman, Kontak Form, Integrasi Chat</td>
-                    <td>Rp 1.500.00</td>
-                </tr>
-                <tr>
-                    <td>Website Bisnis Gold</td>
-                    <td>5 Halaman, SEO Dasar, Galeri Produk Dinamis</td>
-                    <td>Rp 3.500.000</td>
-                </tr>
-                <tr>
-                    <td rowspan="2"><b>Content Creator</b></td>
-                    <td>Sosmed Bronze</td>
-                    <td>12 Konten Feed , Copywriting Creator</td>
-                    <td>Ro 1.000.000</td>
-                </tr>
-                <tr>
-                    <td>Sosmed Premium</td>
-                    <td>20 Konten Feed + Reels, Riset Hastag, Admin Sosmed</td>
-                    <td>Rp 2.500.000</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    <footer>
+    <main class="container">
+        <!-- SEKSI FORTOPOLIO UTAMA (CARD LAYOUT) -->
         <hr>
-        <p align="center">&copy; 2026 Poliban DigiCraft Studio - Hak Cipta Dilindungi Undang-Undang.</p>
-    </footer>
+        <section class="section">
+            <h2 class="section-title">portofolio & Karya Unggulan Kami</h2>
+            <P class="section-subtitle">Beberapa proyek digital yang telah kami selesaikan untuk klien UMKM lokal</P>
+            <div class="cars-grid">
+                <!-- Kartu Portofolio 1 -->
+                <article class="card">
+                    <img src="profil/desain landing page.jpg" alt="Mockup Desain" width>
+                    <div class="card body">
+                        <h3 class="card title">Landing Page UMKM Lokal</h3>
+                        <p class="card-text">Desain landing page modern, cepat, dan responsif untuk meningkatkan
+                            penjualan produk lokal</p>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Kartu Portofolio 2 (Video Profile) -->
+            <article class="card">
+                <div class="vidio-container">
+                    <iframe src="https;//www.youtube.com/embed/UExds0bbfcw?si=t_ux7vf4wViiRP1" 
+                    title="Youtube vidio player" allowfullscreen></iframe>
+                    <em>Gambar 1: Desain Landing Page Responsif untuk UMKM lokal</em>
+                </div>
+                <div class="card body">
+                    <h3 class="card-title">Video Profil Bisnis</h3>
+                    <p class="card-text">Saksikan vidio pengenalan profil studio dan alurkerja profesional tim kreatif
+                        kami</p>
+                </div>
+            </article>
+            </div>
+        </section>
+
+        <!-- SEKSI KATALOG PAKET LAYANAN (PRICING CARDS) -->
+        <section class="section">
+            <h2 class="section-tittle">Paket Layanan & Harga Jasa Kreatif</h2>
+            <p class="section-subtittle">Pilih paket layanan terbaik sesuai kebutuhan bisnis digital Anda:</p>
+
+            <div class="card-grid">
+                <!-- Paket Landing Page Silver -->
+                 <article class="card pricing-card">
+                <div class="card body">
+                    <span class="badge">Web Development</span>
+                    <h3 class="card-title">Landing Page Silver</h3>
+                    <p class="card-price">Rp 1.500.00</p>
+                    <ul class="card-features">
+                        <li>1 Halaman Web Responsif</li>
+                        <li>Formulir Kontak Pemesanan</li>
+                        <li>Integrasi Chat WhatsApp</li>
+                    </ul>
+                    <a href="kontak.html" class="btn-primary">Pesan Paket</a>
+                </div>
+                 </article>
+
+                 <!-- Paket 2: Website Bisnis Gold -->
+                  <article class="card pricing-card featured">
+                    <div class="card-body">
+
+                    </div>
+                  </article>
+                        <td>Landing Page Silver</td>
+                        <td>1 Halaman, Kontak Form, Integrasi Chat</td>
+                        <td>Rp 1.500.00</td>
+                    </tr>
+                    <tr>
+                        <td>Website Bisnis Gold</td>
+                        <td>5 Halaman, SEO Dasar, Galeri Produk Dinamis</td>
+                        <td>Rp 3.500.000</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><b>Content Creator</b></td>
+                        <td>Sosmed Bronze</td>
+                        <td>12 Konten Feed , Copywriting Creator</td>
+                        <td>Ro 1.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>Sosmed Premium</td>
+                        <td>20 Konten Feed + Reels, Riset Hastag, Admin Sosmed</td>
+                        <td>Rp 2.500.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <footer>
+            <hr>
+            <p align="center">&copy; 2026 Poliban DigiCraft Studio - Hak Cipta Dilindungi Undang-Undang.</p>
+        </footer>
 </body>
 
 </html>
